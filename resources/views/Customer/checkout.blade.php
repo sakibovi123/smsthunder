@@ -1,6 +1,10 @@
 @include("Dashboard.base")
 
 <div class="container mx-auto py-7">
+    @if(session()->has('message'))
+        <p class="bg-red-200 p-2 text-lg mx-auto">{{ session()->get('message') }}</p>
+    @endif
+
     <form action="{{ url('/checkout/'.$package_details->id) }}" method="POST">
         @csrf
         @method('POST')

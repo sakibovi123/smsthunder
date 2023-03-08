@@ -32,8 +32,10 @@ class LandingController extends Controller
     \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
         $packages = Package::all();
+        $user = \auth()->user();
         return view("Customer.pricing_test", [
-            "packages" => $packages
+            "packages" => $packages,
+            "user" => $user
         ]);
     }
 

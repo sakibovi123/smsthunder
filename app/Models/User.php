@@ -56,4 +56,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo(PackageCheckout::class);
     }
+
+    public function packagestatus()
+    {
+        return $this->hasOne(PackageStatus::class);
+    }
 }

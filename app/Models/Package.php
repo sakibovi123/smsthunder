@@ -20,4 +20,9 @@ class Package extends Model
         return $this->belongsTo(PackageCheckout::class);
     }
 
+    public function packagestatus()
+    {
+        return $this->belongsTo(PackageStatus::class);
+    }
+
 }
