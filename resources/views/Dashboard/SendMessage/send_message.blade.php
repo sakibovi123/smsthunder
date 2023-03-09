@@ -1,15 +1,21 @@
 @include("Dashboard.base")
 
 @include("Dashboard.sidebar")
-
+<div class="container">
+        <!-- main -->
+        <div class="main ">
+            <!-- header -->
+            @include('Dashboard.header')
+            <!-- End header -->
+            <div class="mt-[60px]">
 <div class="w-full flex flex-col h-screen overflow-y-hidden">
     <!-- Desktop Header -->
-    @include("Dashboard.header")
+    
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
 
             <div class="create-button text-right">
-                <a href="{{ URL('/create-template') }}" class="p-2 bg-gray-900 rounded text-white">CREATE TEMPLATE</a>
+                <a href="{{ URL('/create-template') }}" class="p-2 bg-[#032738] rounded text-white">CREATE TEMPLATE</a>
             </div>
             <div class="w-full mt-12">
                 <p class="text-xl pb-3 flex items-center">
@@ -20,8 +26,8 @@
                         @csrf
 
                         <div class="mb-6">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Message</label>
-                            <select required name="template_id" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Message</label>
+                            <select required name="template_id" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 <option value="" selected>Select Template</option>
                                 @foreach($templates as $template)
                                     <option value="{{ $template->id }}">{{ $template->title }}</option>
@@ -30,8 +36,8 @@
 
                         </div>
                         <div class="mb-6">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Number</label>
-                            <select required name="sender_number" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Number</label>
+                            <select required name="sender_number" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 <option value="" selected>Select Number</option>
                                 @foreach($numbers as $number)
                                     <option value="{{ $number->number }}">{{ $number->number }}</option>
@@ -39,8 +45,8 @@
                             </select>
                         </div>
                         <div class="mb-6">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Campaign</label>
-                            <select required name="list" id="data-list" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Campaign</label>
+                            <select required name="list" id="data-list" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 <option value="" selected>Select Campaign</option>
                                 @foreach($lists as $list)
 
@@ -49,27 +55,29 @@
                             </select>
                         </div>
                         <div class="mb-6">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Numbers</label>
-                            <select required multiple name="customer_id[]" id="customer_numbers" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Numbers</label>
+                            <select required multiple name="customer_id[]" id="customer_numbers" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
 
                             </select>
                         </div>
                         {{-- <div class="mb-6">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Customers</label>
-                            <select required name="customer_id[]" multiple id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Customers</label>
+                            <select required name="customer_id[]" multiple id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 @foreach($customers as $customer)
                                     <option value="{{ $customer->id }}">{{ $customer->customer_phone }}</option>
                                 @endforeach
                             </select>
                         </div> --}}
                         <div class="mb-6 text-center">
-                            <button type="submit" class="bg-green-300 p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
+                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-[#00C1C6] shadow-lg">Save</button>
                         </div>
                     </form>
                 </div>
             </div>
         </main>
-
+                        </div>
+                        </div>
+                        </div>
 
     </div>
 
