@@ -16,8 +16,8 @@
 
             <div class="create-button flex items-center justify-end">
 
-                <a href="{{ route('create-campaign') }}" class="p-2 bg-gray-900 rounded text-white mx-2">Add Campaign</a>
-                <a href="{{ route('create-content') }}" class="p-2 bg-gray-900 rounded text-white">Add Contents</a>
+                <a href="{{ route('create-campaign') }}" class="p-2 bg-[#032738] rounded text-white mx-2">Add Campaign</a>
+                <a href="{{ route('create-content') }}" class="p-2 bg-[#032738] rounded text-white">Add Contents</a>
 
                 </form>
 
@@ -29,7 +29,7 @@
                         {{-- <form action="" method="POST">
                             @csrf
                             <input type="text" name="search_campaign" class="p-2 bg-white rounded text-white" placeholder="Enter campaign id to search" />
-                            <button type="submit" class="p-2 bg-gray-900 rounded text-white">Search</button>
+                            <button type="submit" class="p-2 bg-[#032738] rounded text-white">Search</button>
                         </form> --}}
                     </p>
                 </div>
@@ -48,7 +48,7 @@
                 <div class="bg-white overflow-auto">
                     @if($roles)
                         <table class="min-w-full bg-white">
-                            <thead class="bg-gray-800 text-white">
+                            <thead class="bg-[#032738] text-white">
                             <tr>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Campaign Id</th>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Campaign Title</th>
