@@ -1,14 +1,21 @@
 @include("Dashboard.base")
 
 @include("Dashboard.sidebar")
+<div class="container">
+        <!-- main -->
+        <div class="main ">
+            <!-- header -->
+            @include('Dashboard.header')
+            <!-- End header -->
+            <div class="mt-[60px]">
 <div class="w-full flex flex-col h-screen overflow-y-hidden">
     <!-- Desktop Header -->
-    @include("Dashboard.header")
+    
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
 
             <div class="create-button text-right">
-                <a href="{{ URL::previous() }}" class="p-2 bg-gray-900 rounded text-white">Return back</a>
+                <a href="{{ URL::previous() }}" class="p-2 bg-[#032738] rounded text-white">Return back</a>
             </div>
             <div class="w-full mt-12">
                 <p class="text-xl pb-3 flex items-center">
@@ -19,25 +26,27 @@
                         @csrf
                         <div class="mb-6">
                             <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter body</label>
-                            <textarea id="message" name="body" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="content..."></textarea>
+                            <textarea id="message" name="body" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="content..."></textarea>
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Campaign</label>
-                            <select required name="campaign_id" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
-                                <option value="" selected>Select Content</option>
+                            <select required name="campaign_id" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#032738] focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                                <option class="bg-[#032738]" value="" selected>Select Content</option>
                                 @foreach($campaigns as $campaign)
-                                    <option value="{{ $campaign->id }}">{{ $campaign->campaign_title }} || {{ $campaign->ringba_campaign_id }}</option>
+                                    <option class="bg-[#032738]" value="{{ $campaign->id }}">{{ $campaign->campaign_title }} || {{ $campaign->ringba_campaign_id }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-6 text-center">
-                            <button type="submit" class="bg-green-300 p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
+                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
                         </div>
                     </form>
                 </div>
             </div>
         </main>
-
+</div>
+</div>
+</div>
 
     </div>
 

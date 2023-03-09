@@ -16,13 +16,13 @@
 }
 
 body {
-    min-height: 100vh;
-    overflow-x: hidden;
+    /* min-height: 100vh;
+    overflow-x: hidden; */
 }
 
 .container {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* profile dropdown */

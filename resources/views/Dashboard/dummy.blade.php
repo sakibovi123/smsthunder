@@ -110,7 +110,7 @@
                     <div class="rounded-lg shadow-sm bg-white md:col-span-2 lg:col-span-4">
                         <div class="overflow-x-auto relative sm:rounded-lg">
                             <table class="w-full text-sm text-left text-gray-500">
-                                <thead class="text-xs text-white uppercase bg-sidebar">
+                                <thead class="text-xs text-white uppercase bg-[#032738]">
                                     <tr>
                                         <th class="py-3 px-6 text-lg">Title</th>
                                         <th class="py-3 text-lg px-6">Content</th>

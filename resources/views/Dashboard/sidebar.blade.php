@@ -1,6 +1,6 @@
 <div class="navigation">
     <div class="mt-5 ml-3">
-        <img src="assets/dashboard/dash-icon.png" alt="">
+        <img src="https://i.ibb.co/8YJvWhT/dash-icon.png" alt="">
     </div>
     <ul>
         <li>

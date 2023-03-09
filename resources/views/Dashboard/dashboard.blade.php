@@ -4,14 +4,14 @@
 
     <div class="container">
         <!-- main -->
-        <div class="main">
+        <div class="main ">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
-            <div>
+            <div class="mt-[60px]">
                 <!-- cards -->
                 
-                <div class="cardBox">
+                <div class="cardBox ">
                     <div class="grid lg:grid-cols-2 gap-5">
                     <div class="card">
                         <div>
