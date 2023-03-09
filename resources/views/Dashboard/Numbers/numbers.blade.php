@@ -1,17 +1,24 @@
 @include("Dashboard.base")
 
 @include("Dashboard.sidebar")
+<div class="container">
+        <!-- main -->
+        <div class="main ">
+            <!-- header -->
+            @include('Dashboard.header')
+            <!-- End header -->
+            <div class="mt-[60px]">
 <div class="w-full flex flex-col h-screen overflow-y-hidden">
     <!-- Desktop Header -->
-    @include("Dashboard.header")
+    
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
 
             <div class="create-button text-right">
                 <form action="" method="POST">
                     @csrf
-                    <input type="text" name="search_campaign" class="p-2 bg-white rounded text-white" placeholder="Enter callerId to search" />
-                    <button type="submit" class="p-2 bg-gray-900 rounded text-white">Search</button>
+                    <input type="text" name="search_campaign" class="p-2 bg-white border border-[#032738] rounded text-white" placeholder="Enter callerId to search" />
+                    <button type="submit" class="p-2 bg-[#032738] rounded text-white">Search</button>
                 </form>
 
             </div>
@@ -33,7 +40,7 @@
                 <div class="bg-white overflow-auto">
                     @if($numbers)
                         <table class="min-w-full bg-white">
-                            <thead class="bg-gray-800 text-white">
+                            <thead class="bg-[#032738] text-white">
                             <tr>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Number Id</th>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase form-semibold text-sm">Number</th>
@@ -66,7 +73,9 @@
                 </div>
             </div>
         </main>
-
+</div>
+</div>
+</div>
 
     </div>
 
