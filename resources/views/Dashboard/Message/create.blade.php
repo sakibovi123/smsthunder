@@ -33,7 +33,7 @@
                             <textarea id="message" name="content" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="content..."></textarea>
                         </div>
                         <div class="mb-6 text-center">
-                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
+                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-[#00C1C6] shadow-lg">Save</button>
                         </div>
                     </form>
                 </div>

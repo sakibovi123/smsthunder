@@ -22,7 +22,7 @@
             </div>
             <div class="w-full mt-12">
                 <div class="flex items-center justify-between text-xl pb-3 flex items-center">
-                    <h3>LATEST LISTS</h3>
+                    <h3><i class="fas fa-list mr-3"></i> LATEST LISTS</h3>
                     <button class="px-6 py-1 bg-red-600 text-gray-100 rounded shadow" id="delete-btn">
                         REMOVE ALL
                     </button>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="mt-3 flex justify-end space-x-3">
                             <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900">No</button>
-                            <a href="{{ url('/remove-all-list') }}" class="px-3 py-1 bg-blue-800 text-gray-200 hover:bg-red-600 rounded">Yes</a>
+                            <a href="{{ url('/remove-all-list') }}" class="px-3 py-1 bg-[#032738] text-gray-200 hover:bg-red-600 rounded">Yes</a>
                         </div>
                     </div>
                 </div>

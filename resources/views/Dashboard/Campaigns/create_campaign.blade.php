@@ -25,16 +25,16 @@
                     <form action="{{ url('/save-campaign') }}" method="POST">
                         @csrf
                         <div class="mb-6">
-                            <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter campaign Title</label>
+                            <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Enter campaign Title</label>
                             <input type="text" name="campaign_title" class="block p-2.5 w-full text-sm text-gray-900 bg-[#032738] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="campaign title..." />
                         </div>
                         <div class="mb-6">
-                            <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter campaign Id</label>
+                            <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Enter campaign Id</label>
                             <input required type="text" name="ringba_campaign_id" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-[#032738] focus:ring-blue-500 focus:border-blue-500 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="campaign id..." />
                         </div>
                
                         <div class="mb-6 text-center">
-                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
+                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-[#00C1C6] shadow-lg">Save</button>
                         </div>
                     </form>
                 </div>

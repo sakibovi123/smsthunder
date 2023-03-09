@@ -30,7 +30,7 @@
                                dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
                         </div>
                         <div class="mb-6 text-center">
-                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
+                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-[#00C1C6] shadow-lg">Save</button>
                         </div>
                     </form>
                 </div>
