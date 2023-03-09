@@ -4,7 +4,7 @@
 
     <div class="container">
         <!-- main -->
-        <div class="main ">
+        <div class="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
@@ -239,6 +239,10 @@
                         </table>
                     </div>
                 </div>
+                <!-- Footer -->
+                <div class="pt-5 flex justify-center mb-10">
+                        <p class="text-gray-400 text-xs">Copyright © 2023 Ray Advertising LLC | All rights reserved</p>
+                    </div>
             </div>
         </div>
         <!-- script ioniicon -->
