@@ -22,8 +22,8 @@ class CheckoutController extends Controller
     }
 
 
-    public function checkout(Request $request, $package_id)
-   //\Illuminate\Http\RedirectResponse
+    public function checkout(Request $request, $package_id):
+   \Illuminate\Http\RedirectResponse
     {
         $package_details = Package::where("id", $package_id)->first();
         // $checkout = new PackageCheckout();
