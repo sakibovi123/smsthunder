@@ -1,3 +1,4 @@
+<div class='fixed z-50 w-[80%]'>
 <div class="topbar bg-white">
     <div class="toggle">
         <ion-icon name="menu-outline"></ion-icon>
@@ -11,12 +12,12 @@
     </div>
     <!-- user img -->
     <div>
-        <img src="assets/dashboard/user.jpg" class="user" alt="" onclick="toggleMenu()">
+        <img src="https://i.ibb.co/kHn8XYg/user.jpg" class="user" alt="" onclick="toggleMenu()">
 
         <div class="sub-menu-wrap z-50" id="subMenu">
             <div class="sub-menu">
                 <div class="user-info">
-                    <img src="assets/dashboard/user.jpg" alt="">
+                    <img src="https://i.ibb.co/kHn8XYg/user.jpg" alt="">
                     <h3>James Aldrino</h3>
                 </div>
                 <hr>
@@ -43,4 +44,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>

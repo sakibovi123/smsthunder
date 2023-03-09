@@ -37,7 +37,7 @@
 							rounded mb-2" />
 
         <button type="submit"
-                class="bg-sidebar text-white py-2 w-full mt-4 rounded-md hover:bg-teal-800">
+                class="bg-[#032738] text-white py-2 w-full mt-4 rounded-md hover:bg-teal-800">
             Login
         </button>
         <div class="mt-5 "> <p class=""><span>Or </span> <a class="login-text hover:underline" href="/register">register now !</a></p></div>

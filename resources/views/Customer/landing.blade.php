@@ -828,74 +828,7 @@
     </section>
     <!-- ==== End Blog ==== -->
 
-    <!-- Review -->
-    <section>
-        <div class="containered">
-            <div class="board">
-                <h2 class="text-light text-5xl">Get the lowdown. </h2>
-                <p class="text-light">See what people are saying about us.</p>
-
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="flex">
-                                <div class="comments">
-                                    <img src="assets/stars-5.svg" alt="" class="w-16">
-                                    <p>So far everything is working to perfection and we have not had any issues.</p>
-
-                                    <p>Date of experience: 05 March 2023</p>
-                                </div>
-                                <div class="profile">
-                                    <!-- <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
-                                <a href="#">John V. Bellanmy</a> -->
-                                    <span>Date of experience: 05 March 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="flex">
-                                <div class="comments">
-                                    We're very pleased with the portion of the functionality provided that we are
-                                    needing and the same goes for the speedy reply from the staff with any questions we
-                                    have had along the way.
-                                </div>
-                                <div class="profile">
-                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                        alt="">
-                                    <a href="#">John V. Bellanmy</a>
-                                    <span>Founder & CEO</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="flex">
-                                <div class="comments">
-                                    Animi sunt, ipsa error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Non, placeat quisquam? dignissimos est sit reiciendis iste
-                                </div>
-                                <div class="profile">
-                                    <img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                        alt="">
-                                    <a href="#">John V. Bellanmy</a>
-                                    <span>Founder & CEO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Review -->
+    
 
     <!-- <div class="bottom-area">
         <div class="container">

@@ -1,10 +1,16 @@
 @include("Dashboard.base")
 
 @include("Dashboard.sidebar")
-
+<div class="container">
+        <!-- main -->
+        <div class="main ">
+            <!-- header -->
+            @include('Dashboard.header')
+            <!-- End header -->
+            <div class="mt-[60px]">
 <div class="w-full flex flex-col h-screen overflow-y-hidden">
     <!-- Desktop Header -->
-    @include("Dashboard.header")
+    
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
 
@@ -24,9 +30,9 @@
                 </ul>
             </div>
             <div id="myTabContent">
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-[#032738]" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <table class="min-w-full bg-white">
-                        <thead class="bg-gray-800 text-white">
+                        <thead class="bg-[#032738] text-white">
                         <tr>
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">CREATED AT</th>
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">PAYLOAD</th>
@@ -49,9 +55,9 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-[#032738]" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                     <table class="min-w-full bg-white">
-                        <thead class="bg-gray-800 text-white">
+                        <thead class="bg-[#032738] text-white">
                         <tr>
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">FAILED AT</th>
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">PAYLOAD</th>
@@ -85,7 +91,9 @@
 
             </div>
         </main>
-
+</div>
+</div>
+</div>
 
     </div>
 

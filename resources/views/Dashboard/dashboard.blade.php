@@ -8,10 +8,10 @@
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
-            <div>
+            <div class="mt-[60px]">
                 <!-- cards -->
                 
-                <div class="cardBox">
+                <div class="cardBox border-t ">
                     <div class="grid lg:grid-cols-2 gap-5">
                     <div class="card">
                         <div>
@@ -166,7 +166,7 @@
                         <table>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img1.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/HNP72VP/img1.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>David <br><span>Italy</span></h4>
@@ -174,7 +174,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img2.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/DKRTTDq/img2.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Muhammad <br><span>India</span></h4>
@@ -182,7 +182,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img3.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/HdzBvKG/img3.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Amelia <br><span>France</span></h4>
@@ -190,7 +190,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img4.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/YTScfbF/img4.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Olivia <br><span>USA</span></h4>
@@ -198,7 +198,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img5.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/F7Gs35C/img5.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Amit <br><span>Japan</span></h4>
@@ -206,7 +206,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img6.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/gWLZ5WJ/img6.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Ashraf <br><span>India</span></h4>
@@ -214,7 +214,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img7.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/zXMCpDw/img7.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Diana <br><span>Malaysia</span></h4>
@@ -222,7 +222,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img8.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/sgSD0Jy/img8.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>Amit <br><span>India</span></h4>
@@ -230,7 +230,7 @@
                             </tr>
                             <tr>
                                 <td width="60px">
-                                    <div class="imgBox"><img src="assets/dashboard/img9.jpg" alt=""></div>
+                                    <div class="imgBox"><img src="https://i.ibb.co/L6v5fbZ/img9.jpg" alt=""></div>
                                 </td>
                                 <td>
                                     <h4>David <br><span>Italy</span></h4>
@@ -239,6 +239,10 @@
                         </table>
                     </div>
                 </div>
+                <!-- Footer -->
+                <div class="pt-5 flex justify-center mb-10">
+                        <p class="text-gray-400 text-xs">Copyright © 2023 Ray Advertising LLC | All rights reserved</p>
+                    </div>
             </div>
         </div>
         <!-- script ioniicon -->

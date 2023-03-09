@@ -16,13 +16,13 @@
 }
 
 body {
-    min-height: 100vh;
-    overflow-x: hidden;
+    /* min-height: 100vh;
+    overflow-x: hidden; */
 }
 
 .container {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* profile dropdown */
@@ -204,7 +204,8 @@ font-weight: 600;
 
 .main {
     position: absolute;
-    width: calc(100% - 300px);
+    width: 100%;
+    /* width: calc(100% - 300px); */
     left: 300px;
     min-height: 100vh;
     background: var(--white);
@@ -559,3 +560,4 @@ color: var(--white);
         color: var(--white);
     }
 }
+

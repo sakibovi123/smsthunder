@@ -1,18 +1,25 @@
 @include("Dashboard.base")
 
 @include("Dashboard.sidebar")
+<div class="container">
+        <!-- main -->
+        <div class="main ">
+            <!-- header -->
+            @include('Dashboard.header')
+            <!-- End header -->
+            <div class="mt-[60px]">
 <div class="w-full flex flex-col h-screen overflow-y-hidden">
     <!-- Desktop Header -->
-    @include("Dashboard.header")
+   
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
 
             <div class="create-button text-right">
-                <a href="{{ URL('/create-number') }}" class="p-2 bg-gray-900 rounded text-white">ADD SENDER NUMBER</a>
+                <a href="{{ URL('/create-number') }}" class="p-2 bg-[#032738] rounded text-white">ADD SENDER NUMBER</a>
             </div>
             <div class="w-full mt-12">
                 <div class="flex items-center justify-between text-xl pb-3 flex items-center">
-                    <h3>LATEST SENDER NUMBERS</h3>
+                    <h3><i class="fas fa-list mr-3"></i> LATEST SENDER NUMBERS</h3>
                     <button class="px-6 py-1 bg-red-600 text-gray-100 rounded shadow" id="delete-btn">
                         REMOVE ALL
                     </button>
@@ -33,7 +40,7 @@
                         </div>
                         <div class="mt-3 flex justify-end space-x-3">
                             <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900">No</button>
-                            <a href="{{ url('/remove-sender-numbers') }}" class="px-3 py-1 bg-blue-800 text-gray-200 hover:bg-red-600 rounded">Yes</a>
+                            <a href="{{ url('/remove-sender-numbers') }}" class="px-3 py-1 bg-[#032738] text-gray-200 hover:bg-red-600 rounded">Yes</a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +59,7 @@
                 <div class="bg-white overflow-auto">
                     @if($numbers)
                         <table class="min-w-full bg-white">
-                            <thead class="bg-gray-800 text-white">
+                            <thead class="bg-[#032738] text-white">
                             <tr>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Create at</th>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Number</th>
@@ -84,7 +91,9 @@
                 </div>
             </div>
         </main>
-
+</div>
+</div>
+</div>
 
     </div>
 
