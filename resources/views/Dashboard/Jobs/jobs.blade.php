@@ -1,9 +1,16 @@
 @include("Dashboard.base")
 
 @include("Dashboard.sidebar")
+<div class="container">
+        <!-- main -->
+        <div class="main ">
+            <!-- header -->
+            @include('Dashboard.header')
+            <!-- End header -->
+            <div class="mt-[60px]">
 <div class="w-full flex flex-col h-screen overflow-y-hidden">
     <!-- Desktop Header -->
-    @include("Dashboard.header")
+    
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
             <div class="w-full mt-12 p-3">
@@ -63,7 +70,9 @@
                 </div>
             </div>
         </main>
-
+        </div>
+                        </div>
+                        </div>
 
     </div>
 

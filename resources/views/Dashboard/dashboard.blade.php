@@ -11,7 +11,7 @@
             <div class="mt-[60px]">
                 <!-- cards -->
                 
-                <div class="cardBox ">
+                <div class="cardBox border-t ">
                     <div class="grid lg:grid-cols-2 gap-5">
                     <div class="card">
                         <div>
