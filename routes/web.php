@@ -3,8 +3,14 @@
 use Illuminate\Support\Facades\Route;
 
 // landing urls
-Route::get("/landing", [\App\Http\Controllers\Customer\LandingController::class, "landing"]);
+Route::get("/", [\App\Http\Controllers\Customer\LandingController::class, "landing"]);
 Route::get("/pricing", [\App\Http\Controllers\Customer\LandingController::class, "pricing"])->name("pricing");
+Route::get("/features", [\App\Http\Controllers\Customer\LandingController::class, "get_features_page"])->name("features");
+Route::get("/services", [\App\Http\Controllers\Customer\LandingController::class, "get_service_page"])->name("service");
+Route::get("/contact", [\App\Http\Controllers\Customer\LandingController::class, "get_contact_page"])->name("contact");
+
+// support url
+Route::post("/take-support", [\App\Http\Controllers\Customer\SupportController::class, "support"])->name('support');
 
 
 // package checkout urls
@@ -30,7 +36,7 @@ Route::group(["middleware" => "guest"], function(){
 Route::group(["middleware" => "auth"], function () {
     Route::get("/logout", [\App\Http\Controllers\Auth\AuthController::class, "logout"])->name("logout");
 
-    Route::get("/", [\App\Http\Controllers\DashBoardController::class, 'index']);
+    Route::get("/dashboard", [\App\Http\Controllers\DashBoardController::class, 'index']);
     Route::get("/ringba", [\App\Http\Controllers\TestController::class, "get_ringba_numbers"]);
 
 // templates url

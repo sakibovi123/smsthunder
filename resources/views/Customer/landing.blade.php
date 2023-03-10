@@ -50,23 +50,20 @@
                                     class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Home</a>
                             </li>
                             <li>
-                                <a href="features.html"
+                                <a href="{{ route('features') }}"
                                     class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Features</a>
                             </li>
                             <li>
-                                <a href="service.html"
+                                <a href="{{ route('service') }}"
                                     class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Services</a>
                             </li>
                             <li>
                                 <a href="{{ route('pricing') }}"
                                     class="text-lg font-medium text-[#002F42] text-slate-700 duration-200 hover:text-[#00C1C6] lg:text-base">Pricing</a>
                             </li>
+
                             <li>
-                                <a href="blog.html"
-                                    class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Blog</a>
-                            </li>
-                            <li>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="text-lg font-medium text-[#002F42] duration-200 hover:text-[#00C1C6] lg:text-base">Contact</a>
                             </li>
                         </ul>
@@ -828,7 +825,7 @@
     </section>
     <!-- ==== End Blog ==== -->
 
-    
+
 
     <!-- <div class="bottom-area">
         <div class="container">

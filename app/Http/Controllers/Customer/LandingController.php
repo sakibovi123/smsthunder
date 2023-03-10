@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Customer;
 
 use App\Http\Controllers\Controller;
 use App\Http\Interfaces\CheckoutInterface;
+use App\Http\Interfaces\SupportInterface;
 use App\Models\Package;
 use App\Models\PackageCheckout;
 use Illuminate\Http\Request;
@@ -19,6 +20,7 @@ class LandingController extends Controller
         return $this->checkoutInterface = $checkoutInterface;
     }
 
+
     public function landing():
     \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
@@ -33,7 +35,7 @@ class LandingController extends Controller
     {
         $packages = Package::all();
         $user = \auth()->user();
-        return view("Customer.pricing_test", [
+        return view("Customer.pricing", [
             "packages" => $packages,
             "user" => $user
         ]);
@@ -48,6 +50,24 @@ class LandingController extends Controller
         ]);
     }
 
+    public function get_features_page():
+    \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view("Customer.features", []);
+    }
+
+    public function get_service_page():
+    \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view("Customer.services", []);
+    }
+
+
+    public function get_contact_page():
+    \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view("Customer.contact", []);
+    }
 
 
 }
