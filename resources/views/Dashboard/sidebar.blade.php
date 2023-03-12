@@ -11,7 +11,7 @@
         </li>
 
         <li>
-            <a href="{{ url('/') }}">
+            <a href="{{ url('/dashboard') }}">
                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                 <span class="title">Dashboard</span>
             </a>
