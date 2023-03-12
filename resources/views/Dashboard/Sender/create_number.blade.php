@@ -1,9 +1,8 @@
 @include("Dashboard.base")
-
-@include("Dashboard.sidebar")
-<div class="container">
+        <div class="container">
+        @include("Dashboard.sidebar")
         <!-- main -->
-        <div class="main ">
+        <div id="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
@@ -26,8 +25,8 @@
                             <label for="phone number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Enter Number</label>
                             <input type="number" name="number" class="shadow-sm bg-gray-50 border border-gray-300
                              text-gray-900 text-sm rounded-lg focus:ring-blue-200 focus:border-blue-500 block w-full
-                              p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                               dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+                              p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900
+                               dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Enter Number..." required>
                         </div>
                         <div class="mb-6 text-center">
                             <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-[#00C1C6] shadow-lg">Save</button>

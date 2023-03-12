@@ -1,9 +1,8 @@
 @include("Dashboard.base")
-
-@include("Dashboard.sidebar")
-<div class="container">
+        <div class="container">
+        @include("Dashboard.sidebar")
         <!-- main -->
-        <div class="main ">
+        <div id="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
@@ -81,12 +80,12 @@
                                     <td class="w-1/3 text-left py-3 px-4"><a href="">{{ $l->list_id }}</a></td>
                                     <td class="w-1/3 text-left py-3 px-4"><a href="">{{ $l->title }}</a></td>
                                     <td class="text-left py-3 px-5 text-2xl" colspan="2">
-                                        <div class="flex items-center justify-center">
-                                            <a class="hover:text-blue-500" href="{{ url('/edit-list/'.$l->id) }}"><i class="fas fa-edit"></i></a>
+                                        <div class="flex items-center justify-center gap-3">
+                                            <a class="text-[#032738] hover:text-[#248991]" href="{{ url('/edit-list/'.$l->id) }}"><i class="fas fa-edit"></i></a>
                                             <form action="{{ url('/remove-list/'.$l->id) }}" method="POST">
                                                 @csrf
                                                 @method("DELETE")
-                                                <button class="hover:text-blue-500" type="submit"><i class="fas fa-trash"></i></button>
+                                                <button class="text-[#032738] hover:text-red-500" type="submit"><i class="fas fa-trash"></i></button>
                                             </form>
                                         </div>
 
