@@ -1,9 +1,8 @@
 @include("Dashboard.base")
-
-@include("Dashboard.sidebar")
-<div class="container">
+        <div class="container">
+        @include("Dashboard.sidebar")
         <!-- main -->
-        <div class="main ">
+        <div id="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
@@ -83,7 +82,7 @@
                                         <form action="{{ url('/remove/'.$s->id) }}" method="POST">
                                             @csrf
                                             @method("DELETE")
-                                            <button class="hover:text-blue-500" type="submit"><i class="fas fa-trash"></i></button>
+                                            <button class="text-[#032738] hover:text-red-500" type="submit"><i class="fas fa-trash"></i></button>
                                         </form>
                                     </td>
 

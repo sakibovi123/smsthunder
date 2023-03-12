@@ -16,7 +16,7 @@
             <div class="create-button text-right">
                 <form action="" method="POST">
                     @csrf
-                    <input type="text" name="search_campaign" class="p-2 bg-white border border-[#032738] rounded text-white" placeholder="Enter callerId to search" />
+                    <input type="text" name="search_campaign" class="p-2 bg-white border border-[#032738] rounded text-gray-900" placeholder="Enter callerId to search" />
                     <button type="submit" class="p-2 bg-[#032738] rounded text-white">Search</button>
                 </form>
 

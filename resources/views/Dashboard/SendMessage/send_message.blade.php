@@ -1,9 +1,8 @@
 @include("Dashboard.base")
-
-@include("Dashboard.sidebar")
-<div class="container">
+        <div class="container">
+        @include("Dashboard.sidebar")
         <!-- main -->
-        <div class="main ">
+        <div id="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
@@ -27,7 +26,7 @@
 
                         <div class="mb-6">
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Message</label>
-                            <select required name="template_id" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <select required name="template_id" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 <option value="" selected>Select Template</option>
                                 @foreach($templates as $template)
                                     <option value="{{ $template->id }}">{{ $template->title }}</option>
@@ -37,7 +36,7 @@
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Number</label>
-                            <select required name="sender_number" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <select required name="sender_number" id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 <option value="" selected>Select Number</option>
                                 @foreach($numbers as $number)
                                     <option value="{{ $number->number }}">{{ $number->number }}</option>
@@ -46,7 +45,7 @@
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Campaign</label>
-                            <select required name="list" id="data-list" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <select required name="list" id="data-list" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 <option value="" selected>Select Campaign</option>
                                 @foreach($lists as $list)
 
@@ -56,13 +55,13 @@
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Numbers</label>
-                            <select required multiple name="customer_id[]" id="customer_numbers" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <select required multiple name="customer_id[]" id="customer_numbers" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-[#248991] block w-full p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-[#248991] dark:focus:border-[#248991] dark:shadow-sm-light">
 
                             </select>
                         </div>
                         {{-- <div class="mb-6">
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#032738]">Select Customers</label>
-                            <select required name="customer_id[]" multiple id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#032738] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            <select required name="customer_id[]" multiple id="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                 @foreach($customers as $customer)
                                     <option value="{{ $customer->id }}">{{ $customer->customer_phone }}</option>
                                 @endforeach
