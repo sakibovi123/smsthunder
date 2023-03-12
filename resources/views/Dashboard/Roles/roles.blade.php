@@ -1,9 +1,8 @@
 @include("Dashboard.base")
-
-@include("Dashboard.sidebar")
-<div class="container">
+        <div class="container">
+        @include("Dashboard.sidebar")
         <!-- main -->
-        <div class="main ">
+        <div id="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->
