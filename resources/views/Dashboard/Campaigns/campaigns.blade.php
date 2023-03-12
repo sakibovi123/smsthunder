@@ -1,14 +1,8 @@
 @include("Dashboard.base")
-
-@include("Dashboard.sidebar")
-<!-- <div class="w-full flex flex-col h-screen overflow-y-hidden"> -->
-    <!-- Desktop Header -->
-    
-    <!-- <div class="w-full overflow-x-hidden border-t flex flex-col">
-        <main class="w-full flex-grow p-6"> -->
         <div class="container">
+        @include("Dashboard.sidebar")
         <!-- main -->
-        <div class="main ">
+        <div id="main">
             <!-- header -->
             @include('Dashboard.header')
             <!-- End header -->

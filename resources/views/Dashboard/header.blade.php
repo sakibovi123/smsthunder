@@ -1,5 +1,5 @@
-<div class='fixed z-50 w-[80%]'>
-<div class="topbar bg-white">
+<div class=''>
+<div class="topbar bg-white fixed z-50">
     <div class="toggle">
         <ion-icon name="menu-outline"></ion-icon>
     </div>

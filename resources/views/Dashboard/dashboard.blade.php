@@ -1,12 +1,11 @@
 @section('title') {{'Dashboard'}} @endsection
 @include("Dashboard.base")
-@include("Dashboard.sidebar")
-
-    <div class="container">
-        <!-- main -->
-        <div class="main">
             <!-- header -->
-            @include('Dashboard.header')
+            <div class="container">
+            @include("Dashboard.sidebar")
+        <!-- main -->
+        <div id="main">
+        @include('Dashboard.header')
             <!-- End header -->
             <div class="mt-[60px]">
                 <!-- cards -->
@@ -63,10 +62,10 @@
 
                 <!-- Add Charts -->
                 <div class="graphBox">
-                    <div class="box">
+                    <div class="box chart1">
                         <canvas id="myChart"></canvas>
                     </div>
-                    <div class="box">
+                    <div class="box chart2">
                         <canvas id="earning"></canvas>
                     </div>
                 </div>
@@ -241,7 +240,7 @@
                 </div>
                 <!-- Footer -->
                 <div class="pt-5 flex justify-center mb-10">
-                        <p class="text-gray-400 text-xs">Copyright © 2023 Ray Advertising LLC | All rights reserved</p>
+                        <p class="text-gray-400 text-xs">Copyright © 2023 SMS Thunder | All rights reserved</p>
                     </div>
             </div>
         </div>

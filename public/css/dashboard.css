@@ -201,6 +201,11 @@ font-weight: 600;
     box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
 }
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 300px;
+  }
 
 .main {
     position: absolute;
@@ -217,7 +222,8 @@ font-weight: 600;
 }
 
 .topbar{
-    width: 100%;
+    width: 80%;
+    /* max-width: 1836px; */
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -270,6 +276,7 @@ font-weight: 600;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .user img{
@@ -341,10 +348,19 @@ color: var(--white);
     position: relative;
     background: #fff;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
     border-radius: 20px;
 } 
+
+/* .chart1{
+    width: 30%;
+    float: left;
+} */
+.chart2{
+    max-width: 980px;
+    float: left;
+}
 /* charts */
 
 .details{
@@ -561,3 +577,8 @@ color: var(--white);
     }
 }
 
+@media (min-width: 1536px) {
+.container {
+    max-width: 1876px !important;
+}
+}
