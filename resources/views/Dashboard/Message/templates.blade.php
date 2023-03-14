@@ -75,11 +75,31 @@
                             <td class="text-left py-3 px-5 text-2xl" colspan="2">
                                 <div class="flex items-center justify-center gap-5">
                                     <a class="text-[#032738] hover:text-[#248991]" href="{{ url('/edit-template/'.$template->id) }}"><i class="fas fa-edit"></i></a>
-                                    <form action="{{ url('/delete-template/'.$template->id) }}" method="POST">
-                                        @csrf
+                                    <form action="{{ url('/delete-template/'.$template->id) }}" method="POST" >
+                                    @csrf
                                         @method("DELETE")
-                                        <button class="text-[#032738] hover:text-red-500" type="submit"><i class="fas fa-trash"></i></button>
-                                        
+                                        <button data-toggle="modal" data-target="#delete" id="trash-btn" class="text-[#032738] hover:text-red-500" type="submit"><i class="fas fa-trash"></i></button>
+                                        {{-- modal start --}}
+                <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
+                    <div class="bg-gray-200 max-w-sm py-2 px-3 rounded shadow-xl text-gray-800">
+                        <div class="flex justify-between items-center">
+                            <h4 class="text-lg font-bold">Confirm Delete?</h4>
+                            <svg class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full" id="close-modal" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="mt-2 text-sm">
+                            <p>Are you sure you want to delete all the data?</p>
+                        </div>
+                        <div class="mt-3 flex justify-end space-x-3">
+                            <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900">No</button>
+                            <a href="{{ route('destroy_all') }}" class="px-3 py-1 bg-blue-800 text-gray-200 hover:bg-red-600 rounded">Yes</a>
+                        </div>
+                    </div>
+                </div>
+                {{-- modal End --}}
                                     </form>
                                 </div>
                                 
@@ -121,6 +141,19 @@
             closeBtn.addEventListener('click', toggleModal)
         })
     </script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () =>{
+        const overlay = document.querySelector('#overlay')
+        const delBtn = document.querySelector('#trash-btn')
+        const closeBtn = document.querySelector('#close-modal')
+        const toggleModal = () => {
+            overlay.classList.toggle('hidden')
+            overlay.classList.toggle('flex')
+        }
+        delBtn.addEventListener('click', toggleModal)
+        closeBtn.addEventListener('click', toggleModal)
+    })
+</script>
 <script>
     var chartOne = document.getElementById('chartOne');
     var myChart = new Chart(chartOne, {

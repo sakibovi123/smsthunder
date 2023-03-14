@@ -203,7 +203,7 @@ font-weight: 600;
 }
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 10px;
     margin-left: 300px;
   }
 

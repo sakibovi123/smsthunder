@@ -23,14 +23,11 @@
                         @csrf
                         @method("PUT")
                         <div class="mb-6">
-                            <label for="phone number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Number</label>
-                            <input type="number" value="{{ $number->number }}" name="number" class="shadow-sm bg-gray-50 border border-gray-300
-                             text-gray-900 text-sm rounded-lg focus:ring-blue-200 focus:border-blue-500 block w-full
-                              p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                               dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+                            <label for="phone number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Enter Number</label>
+                            <input type="number" value="{{ $number->number }}" name="number" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#fff] dark:border-[#248991] dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
                         </div>
                         <div class="mb-6 text-center">
-                            <button type="submit" class="bg-green-300 p-2 w-[100%] rounded hover:bg-green-400 shadow-lg">Save</button>
+                            <button type="submit" class="bg-[#248991] p-2 w-[100%] rounded hover:bg-[#00C1C6] shadow-lg">Save</button>
                         </div>
                     </form>
                 </div>
