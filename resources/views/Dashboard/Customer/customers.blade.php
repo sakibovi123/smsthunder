@@ -67,7 +67,7 @@
                 <div class="bg-white overflow-auto">
                     @if($customers)
                         <table class="min-w-full bg-white">
-                            <thead class="bg-[#032738] text-white">
+                            <thead class="bg-gray-100 border border-y-2 border-[#032738] border-x-0 text-gray-600">
                             <tr>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Customer Numbers</th>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">LIST ID</th>
@@ -78,7 +78,7 @@
                             <tbody class="text-gray-700">
 
                             @foreach($customers as $customer)
-                                <tr>
+                                <tr class="hover:bg-gray-100 cursor-pointer border-b border-gray-500">
                                     <td class="w-1/3 text-left py-3 px-4">{{ $customer->customer_phone }}</td>
                                     <td class="w-1/3 text-left py-3 px-4">{{ $customer->data_list_id }}</td>
 

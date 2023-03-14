@@ -61,7 +61,7 @@
                 <div class="bg-white overflow-auto">
                     @if($lists)
                         <table class="min-w-full bg-white">
-                            <thead class="bg-[#032738] text-white">
+                            <thead class="bg-gray-100 border border-y-2 border-[#032738] border-x-0 text-gray-600">
                             <tr>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">EXCEL ID</th>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">ADDED DATE</th>
@@ -74,7 +74,7 @@
                             <tbody class="text-gray-700">
 
                             @foreach($lists as $l)
-                                <tr>
+                                <tr  class="hover:bg-gray-100 cursor-pointer border-b border-gray-500">
                                     <td class="w-1/3 text-left py-3 px-4"><a href="{{ url('/view/'.$l->list_id) }}">{{ $l->id }}</a></td>
                                     <td class="w-1/3 text-left py-3 px-4"><a href="{{ url('/view/'.$l->list_id) }}">{{ $l->created_at }}</a></td>
                                     <td class="w-1/3 text-left py-3 px-4"><a href="">{{ $l->list_id }}</a></td>

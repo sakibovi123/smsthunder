@@ -62,7 +62,7 @@
 
                     @if($sent)
                         <table class="min-w-full bg-white">
-                            <thead class="bg-[#032738] text-white">
+                            <thead class="bg-gray-100 border border-y-2 border-[#032738] border-x-0 text-gray-600">
                             <tr>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Delivered Date</th>
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Id</th>
@@ -72,7 +72,7 @@
                             <tbody class="text-gray-700">
 
                             @foreach($sent as $s)
-                                <tr>
+                                <tr class="hover:bg-gray-100 cursor-pointer border-b border-gray-500">
                                     <td class="w-1/3 text-left py-3 px-4"><a href="{{ url('/view-details/'.$s->id) }}">{{ $s->created_at }}</a></td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <a href="{{ url('/view-details/'.$s->id) }}">{{ $s->id }}</a>
